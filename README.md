@@ -2,7 +2,7 @@
 
 ## Setup semantic-ui
 - Install Node.js v7.1.0
-- Install Gulp v3.9.1 `npm install -g gulp`
+- Install Gulp v3.9.1 Just run `npm install`
 - Change directory `cd semantic`
 - Run `gulp build`
 
