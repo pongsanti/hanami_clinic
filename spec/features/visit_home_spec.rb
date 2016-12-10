@@ -16,12 +16,12 @@ describe 'Visit home' do
   it 'has link to semantic css file' do
     visit '/'
 
-    page.body.must_include('semantic.css')
+    page.body.must_include('semantic.min.css')
   end
 
   it 'has link to semantic js file' do
     visit '/'
 
-    page.body.must_include('semantic.js')
+    page.body.must_include('semantic.min.js')
   end
 end
