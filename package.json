@@ -1,0 +1,25 @@
+{
+  "name": "hanami_clinic",
+  "version": "1.0.0",
+  "description": "## Setup semantic-ui - Install Node.js v7.1.0 - Install Gulp v3.9.1 `npm install -g gulp` - Change directory `cd semantic` - Run `gulp build`",
+  "main": "index.js",
+  "dependencies": {
+    "semantic-ui": "^2.2.6"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pongsanti/hanami_clinic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pongsanti/hanami_clinic/issues"
+  },
+  "homepage": "https://github.com/pongsanti/hanami_clinic#readme"
+}
