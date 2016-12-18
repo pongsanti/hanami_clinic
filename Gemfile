@@ -9,6 +9,9 @@ gem 'sqlite3'
 
 gem 'slim'
 
+# Postgres adapter
+gem 'pg'
+
 group :development do
   # Code reloading
   # See: http://hanamirb.org/guides/projects/code-reloading

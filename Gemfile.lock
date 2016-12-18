@@ -95,6 +95,7 @@ GEM
     minitest (5.10.1)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
+    pg (0.18.4)
     public_suffix (2.0.4)
     rack (1.6.5)
     rack-test (0.6.3)
@@ -153,6 +154,7 @@ DEPENDENCIES
   hanami (~> 0.9)
   hanami-model (~> 0.7)
   minitest
+  pg
   rake
   shotgun
   slim
