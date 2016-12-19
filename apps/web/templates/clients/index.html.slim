@@ -1,0 +1,10 @@
+h2 All Clients
+
+- if clients.any?
+  #clients
+    - clients.each do |client|
+      .client
+        h2 =client.name
+        p =client.email
+- else
+  p.placeholder There are no clients
