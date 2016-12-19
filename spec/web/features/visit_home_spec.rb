@@ -1,4 +1,4 @@
-require 'features_helper'
+require_relative '../../features_helper'
 
 describe 'Visit home' do
   it 'is successful' do

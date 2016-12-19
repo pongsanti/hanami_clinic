@@ -1,4 +1,4 @@
-require_relative '../features_helper'
+require_relative '../../features_helper'
 
 describe 'List clients' do
   let(:repository) { ClientRepository.new }
