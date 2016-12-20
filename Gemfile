@@ -7,6 +7,7 @@ gem 'hanami-model', '~> 0.7'
 
 gem 'sqlite3'
 
+gem 'sass'
 gem 'slim'
 
 # Postgres adapter

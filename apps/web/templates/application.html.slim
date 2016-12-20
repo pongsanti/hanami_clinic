@@ -9,4 +9,18 @@ html
     = javascript 'jquery-3.1.1'
     script src="assets/semantic/semantic.min.js"
     link rel="stylesheet" type="text/css" href="assets/semantic/semantic.min.css"
-  body = yield
+    = stylesheet 'application'
+  .ui.fixed.inverted.menu
+    .ui.container
+      a.header.item href="#"
+        = image 'logo.png', class: "logo"
+        'Project Name      
+      a.item href="#" Home
+      .ui.simple.dropdown.item
+        'Dropdown
+        i.dropdown.icon
+        .menu
+          a.item href="#" Link item
+          a.item href="#" Link item
+  .ui.main.text.container
+    body = yield
