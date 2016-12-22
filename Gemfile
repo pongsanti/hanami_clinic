@@ -25,6 +25,7 @@ end
 
 group :test do
   gem 'minitest'
+  gem 'minitest-reporters'
   gem 'capybara'
 end
 
