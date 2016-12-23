@@ -12,10 +12,10 @@ describe 'Add a client' do
       fill_in 'Name', with: 'New Client'
       fill_in 'Email', with: 'client01@gmail.com'
 
-      click_button 'Create'
+      click_button 'Create Client'
     end
 
     current_path.must_equal('/clients')
-    assert path.has_content?('New Client')
+    assert page.has_content?('New Client')
   end
 end
