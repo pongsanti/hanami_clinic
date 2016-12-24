@@ -3,7 +3,7 @@
 </div>
 
 <%=
-  form_for :client, '/clients', class: 'ui form' do
+  form_for :client, routes.clients_path, class: 'ui form' do
     div class: "field" do
       label :name
       text_field :name, placeholder: 'Name'

@@ -3,7 +3,5 @@
 #
 # Example:
 # get '/hello', to: ->(env) { [200, {}, ['Hello from Hanami!']] }
-post '/clients', to: 'clients#create'
-get '/clients/new', to: 'clients#new'
-get '/clients', to: 'clients#index'
+resources :clients, only: [:index, :new, :create]
 root to: 'home#index'
