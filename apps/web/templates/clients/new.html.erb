@@ -2,16 +2,29 @@
   <h2>Add Client</h2>
 </div>
 
+<% unless params.valid? %>
+  <div class="ui error message">
+    <div class="header">There was a problem with your submission</div>
+    <ul class="list">
+      <% params.error_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
 <%=
   form_for :client, routes.clients_path, class: 'ui form' do
-    div class: "field" do
-      label :name
-      text_field :name, placeholder: 'Name'
-    end
+    div class: "two fields" do
+      div class: "field" do
+        label :name
+        text_field :name, placeholder: 'Name'
+      end
 
-    div class: "field" do
-      label :email
-      text_field :email, placeholder: 'Email'
+      div class: "field" do
+        label :email
+        text_field :email, placeholder: 'Email'
+      end
     end
 
     submit 'Create Client', class: 'ui button'

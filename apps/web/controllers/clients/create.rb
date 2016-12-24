@@ -4,10 +4,21 @@ module Web::Controllers::Clients
 
     expose :client
 
-    def call(params)
-      @client = ClientRepository.new.create(params[:client])
+    params do
+      required(:client).schema do
+        required(:name).filled(:str?)
+        required(:email).filled(:str?)
+      end
+    end
 
-      redirect_to '/clients'
+    def call(params)
+      if params.valid?
+        @client = ClientRepository.new.create(params[:client])
+
+        redirect_to '/clients'
+      else
+        self.status = 422
+      end
     end
   end
 end

@@ -18,4 +18,18 @@ describe 'Add a client' do
     current_path.must_equal('/clients')
     assert page.has_content?('New Client')
   end
+
+  it 'displays list of errors when params contain errors' do
+    visit '/clients/new'
+
+    within 'form#client-form' do
+      click_button 'Create Client'
+    end
+
+    current_path.must_equal('/clients')
+
+    assert page.has_content?('There was a problem with your submission')
+    assert page.has_content?('Name must be filled')
+    assert page.has_content?('Email must be filled')
+  end
 end
